@@ -1,172 +1,211 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
+    background-color: #121212; /* Dark theme background */
+    color: #f5f5f5; /* Light text for readability */
+  }
 
-h1, h2 {
+  nav{
+    margin-left: 520px;
+  }
+
+  nav ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+
+  nav ul li{
+    border: none;
+  }
+
+  
+  h1,
+  h2 {
     text-align: center;
-    color: #4CAF50;
-}
-
-h1 {
+    color: #eeeeee; /* Softer white for headings */
+  }
+  
+  h1 {
     margin-top: 20px;
-    font-size: 2.5em;
-}
-
-h2 {
-    margin-top: 40px;
-    font-size: 2em;
-}
-
-p {
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+  
+  h2 {
+    margin-top: 30px;
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+  
+  p {
     text-align: center;
-    font-size: 1.1em;
-    margin: 10px auto;
-    width: 80%;
-}
-
-/* Image Styles */
-img {
+    font-size: 1.2rem;
+    margin: 15px auto;
+    width: 85%;
+    color: #d1d1d1; /* Muted light gray for paragraphs */
+  }
+  
+  /* Image Styles */
+  img {
     display: block;
     margin: 20px auto;
     border-radius: 50%;
-    border: 4px solid #4CAF50;
-    transition: transform 0.3s ease;
-}
-
-img:hover {
-    transform: scale(1.1);
-}
-
-/* Link Styles */
-a {
-    color: #4CAF50;
+    border: 5px solid #eeeeee; /* Light border */
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Link Styles */
+  a {
+    color: #4fc3f7; /* Bright cyan links */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #2E7D32;
-}
-
-/* List Styles */
-ul, ol {
-    margin: 20px auto;
+  }
+  
+  a:hover {
+    color: #29b6f6; /* Slightly darker cyan on hover */
+  }
+  
+  /* List Styles */
+  ul,
+  ol {
+    margin: 25px auto;
     padding: 0;
     list-style-position: inside;
-    width: 80%;
-}
-
-li {
-    font-size: 1.1em;
-    margin-bottom: 8px;
-    padding: 5px;
-    background-color: #e8f5e9;
-    border: 1px solid #4CAF50;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-li:hover {
-    background-color: #c8e6c9;
-}
-
-/* Table Styles */
-table {
-    margin: 20px auto;
-    width: 80%;
-    border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-th, td {
+    width: 85%;
+  }
+  
+  li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
     padding: 10px;
+    background-color: #1e1e1e; /* Deep gray for list items */
+    border: 1px solid #4fc3f7; /* Cyan border */
+    border-radius: 8px;
+    color: #f5f5f5; /* Light text */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  li:hover {
+    background-color: #333333; /* Slightly lighter gray on hover */
+    transform: translateY(-3px);
+  }
+  
+  /* Table Styles */
+  table {
+    margin: 25px auto;
+    width: 90%;
+    border-collapse: collapse;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  th,
+  td {
+    padding: 12px;
     text-align: left;
-    border: 1px solid #ddd;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-td {
-    background-color: #f9f9f9;
-}
-
-tr:hover td {
-    background-color: #e8f5e9;
-}
-
-/* Form Styles */
-form {
-    width: 80%;
+    border: 1px solid #333333; /* Darker border */
+  }
+  
+  th {
+    background-color: #1e272e; /* Dark gray-blue for headers */
+    color: #f5f5f5; /* Light text */
+    font-weight: bold;
+  }
+  
+  td {
+    background-color: #212121; /* Darker cell background */
+    color: #e0e0e0; /* Softer gray for text */
+  }
+  
+  tr:hover td {
+    background-color: #333333; /* Highlight row on hover */
+  }
+  
+  /* Form Styles */
+  form {
+    width: 85%;
     margin: 30px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-label {
+    padding: 25px;
+    background-color: #1e1e1e; /* Dark form background */
+    border: 1px solid #4fc3f7; /* Cyan border */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  label {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-input {
+    margin-bottom: 8px;
+    color: #eeeeee; /* Softer white for labels */
+  }
+  
+  input,
+  textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 1em;
-}
-
-input:focus {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #444444; /* Subtle border */
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #121212; /* Deep background for inputs */
+    color: #f5f5f5; /* Light text */
+  }
+  
+  input:focus,
+  textarea:focus {
     outline: none;
-    border-color: #4CAF50;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
-}
-
-button {
+    border-color: #4fc3f7; /* Cyan border on focus */
+    box-shadow: 0 0 8px rgba(79, 195, 247, 0.6);
+  }
+  
+  button {
     display: block;
     width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    padding: 12px;
+    background-color: #4fc3f7; /* Cyan button */
+    color: #121212; /* Dark text for contrast */
     border: none;
-    border-radius: 5px;
-    font-size: 1em;
+    border-radius: 6px;
+    font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #2E7D32;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    p, ul, ol, table, form {
-        width: 95%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #29b6f6; /* Slightly darker cyan on hover */
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    p,
+    ul,
+    ol,
+    table,
+    form {
+      width: 95%;
     }
-
+  
     h1 {
-        font-size: 2em;
+      font-size: 2.2rem;
     }
-
+  
     h2 {
-        font-size: 1.8em;
+      font-size: 1.8rem;
     }
-}
+  
+    button {
+      font-size: 1rem;
+    }
+  }
+  
