@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard UI</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">Profitize</div>
+      <ul>
+        <li>Overview</li>
+        <li>Growth</li>
+        <li>Customers</li>
+        <li>Reports</li>
+        <li>Support</li>
+        <li>Settings</li>
+      </ul>
+      <div class="logout">Log out</div>
+    </div>
+    <div class="main-content">
+      <div class="header">
+        <div class="search">
+          <input type="text" placeholder="Search " />
+        </div>
+        <div class="user">
+          <img src="/Task_1,2/assets/profile_1.png" alt="User Avatar" />
+          <span>Eva Murphy</span>
+        </div>
+      </div>
+
+      <div class="overview">
+        <div class="card">
+          <h3>KPIs</h3>
+          <div class="stats-container">
+            <div class="stat-item">
+              <div class="stat-title">Current MRR</div>
+              <div class="start">
+                <div class="stat-value">$855.4k</div>
+                <div class="stat-change positive">▲ 16%</div>
+              </div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-title">Current Customers</div>
+              <div class="start">
+                <div class="stat-value">127,754</div>
+                <div class="stat-change positive">▲ 17%</div>
+              </div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-title">Active Customers</div>
+              <div class="start">
+                <div class="stat-value">73.57%</div>
+                <div class="stat-change neutral">▲ 21%</div>
+              </div>
+            </div>
+          </div>
+          <div class="chart-container">
+            <h3>Analytics</h3>
+            <canvas id="doughnutChart"></canvas>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3>This Year Growth</h3>
+            <div class="dropdown">
+              Jan 08 - Aug 08
+              <span class="dropdown-icon"></span>
+              <div class="dropdown-content">
+                <div>Jan 08 - Aug 08</div>
+                <div>Aug 09 - Dec 31</div>
+                <div>Jan 01 - Jan 07</div>
+              </div>
+            </div>
+          </div>
+          <canvas id="barChart"></canvas>
+
+          <div class="activity">
+            <div class="card-content">
+              <h3>Recent Activity</h3>
+              <div class="dropdown">
+                Last 24h
+                <span class="dropdown-icon"></span>
+                <div class="dropdown-content">
+                  <div>2days</div>
+                  <div>3Days</div>
+                  <div>4Days</div>
+                </div>
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Customer</th>
+                  <th>Status</th>
+                  <th>Order Number</th>
+                  <th>Retained</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Jenny Wilson</td>
+                  <td>New Customer</td>
+                  <td>#0038160</td>
+                  <td>1 min ago</td>
+                  <td>$123.40</td>
+                </tr>
+                <tr>
+                  <td>Guy Hawkins</td>
+                  <td>Signed Up</td>
+                  <td>#0038159</td>
+                  <td>5 min ago</td>
+                  <td>$79.99</td>
+                </tr>
+                <tr>
+                  <td>Ralph Edwards</td>
+                  <td>New Customer</td>
+                  <td>#0038158</td>
+                  <td>24 min ago</td>
+                  <td>$217.30</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
