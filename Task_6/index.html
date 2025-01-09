@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfolio Enhancement</title>
+ 
+</head>
+<body>
+  <h1>My Portfolio</h1>
+  <button id="toggleAbout">Toggle About Me</button>
+  <div id="aboutMe">
+    <p>This is the About Me.</p>
+  </div>
+
+  <button id="toggleProjects">Toggle Projects</button>
+  <div id="projects">
+    <h2>Projects</h2>
+    <div id="projectList"></div>
+    <button id="addProject">Add New Project</button>
+  </div>
+
+  
+  <form id="contactForm">
+    <h2>Contact</h2>
+    <label for="name">Name: </label>
+    <input type="text" id="name" required><br><br>
+    <label for="email">Email: </label>
+    <input type="email" id="email" required><br><br>
+    <button type="submit">Submit</button>
+    <p id="formAlert" class="alert hidden">Please fill out all fields.</p>
+  </form>
+
+  <script src="script.js"></script>
+ 
+</body>
+</html>
